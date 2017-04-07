@@ -1,1 +1,1 @@
-# numbergame
+Play a fun number game created with Javascript!
