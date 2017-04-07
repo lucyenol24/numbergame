@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Pick A Number! </title> 
+  <meta charset="utf-8">
+<!--  ADD CSS LINK-->
+</head>
+
+<body>
+  <header>
+    <h1> Pick A Number! </h1>
+    <h3> Any Number </h3>
+  </header>
+  
+  <main>
+    <form name="addForm">
+      <label> Enter a number: 
+        <input type="number" step="any" name="number">
+      </label>
+      <input type="submit" onclick="addNumber(event)">
+      <button type="button" onclick="cleanMe()">Reset</button>
+    </form>
+    
+    <div id="result">
+      <p> Count: <span id="count">0</span></p>
+      <p> Sum: <span id="sum">0</span></p>
+      <p> Average: <span id="average">0</span></p>
+    </div>
+    
+  </main>
+  
+  <script type="text/javascript" src="script.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
