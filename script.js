@@ -1,35 +1,26 @@
 var numbers = [];
 var sum = 0;
+var avg = 0;
 
 function addNumber(event) {
-  var formNumber = document.addForm.number.value;
-  if(isNum(formNumber)) {
-    var number = parseFloat(formNumber);
-    numbers.push(number);
+  var formNumber = document.addForm.formNumber.value;
+  var number = Number(formNumber);
+  if(isNaN(number)) {
+    inputs.push(number);
     sum += number;
+    avg = sum/inputs.length;
+    document.getElementById("count").innerHTML = inputs.length;
+    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("avg").innerHTML = avg;
+    console.log(numbers);
+    console.log(sum);
+    console.log(avg);
   }
-  updateResult();
-  document.addForm.number.value = "";
   event.preventDefault();
 }
 
-function cleanAnswer() {
-  document.addForm.number.value = "";
-  numbers = [];
+function resetButton(event) {
   sum = 0;
-  updateResults();
-  event.preventDefault();
+  avg = 0;
+  numbers = {};
 }
-
-function updateResults() {
-  document.getElementById("count").innerHTML = numbers.length;
-  document.getElementById("sum").innerHTML = sum;
-  var average = sum/numbers.length;
-  if(isNaN(average)) {
-    average = 0;
-  }
-  document.getElementById("average").innerHTML = average;
-}
-
-
-//Looked at Tamara Riveria's code to get parseFloat, and to figure out how to find the average by using js
