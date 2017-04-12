@@ -14,18 +14,17 @@
   
   <main>
     <form name="addForm">
-      <label> Enter a number: 
-        <input type="number" step="any" name="number">
-      </label>
-      <input type="submit" onclick="addNumber(event)">
-      <button type="button" onclick="cleanAnswer()">Reset</button>
+      Enter a number: 
+      <input type="number" id="formNumber" value="0">
+      <button onclick="addNumber(event)">Go!</button>
+      <button onclick="resetButton(event)">Reset</button>
+      <br>
+      Count: <p id="count"></p>
+      <br>
+      Sum: <p id="sum"></p>
+      <br>
+      Average: <p id="avg"></p>
     </form>
-    
-    <div id="result">
-      <p> Count: <span id="count">0</span></p>
-      <p> Sum: <span id="sum">0</span></p>
-      <p> Average: <span id="average">0</span></p>
-    </div>
     
   </main>
   
