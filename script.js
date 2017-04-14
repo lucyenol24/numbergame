@@ -1,9 +1,9 @@
-var numbers = [];
+var inputs = [];
 var sum = 0;
 var avg = 0;
 
 function addNumber(event) {
-  var formNumber = document.addForm.formNumber.value;
+  var formNumber = document.mathForm.formNumber.value;
   var number = Number(formNumber);
   if(!isNaN(number)) {
     inputs.push(number);
@@ -12,7 +12,7 @@ function addNumber(event) {
     document.getElementById("count").innerHTML = inputs.length;
     document.getElementById("sum").innerHTML = sum;
     document.getElementById("avg").innerHTML = avg;
-    console.log(numbers);
+    console.log(inputs);
     console.log(sum);
     console.log(avg);
   }
@@ -22,5 +22,5 @@ function addNumber(event) {
 function resetButton(event) {
   sum = 0;
   avg = 0;
-  numbers = {};
+  inputs = {};
 }
