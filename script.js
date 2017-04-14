@@ -5,7 +5,7 @@ var avg = 0;
 function addNumber(event) {
   var formNumber = document.addForm.formNumber.value;
   var number = Number(formNumber);
-  if(isNaN(number)) {
+  if(!isNaN(number)) {
     inputs.push(number);
     sum += number;
     avg = sum/inputs.length;
