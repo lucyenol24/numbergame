@@ -7,29 +7,26 @@
 </head>
 
 <body>
-  <header>
     <h1> Pick A Number! </h1>
     <h3> Any Number </h3>
-  </header>
   
-  <main>
-    <form name="addForm">
+    <form name="mathForm">
       Enter a number: 
-      <input type="number" name="formNumber" value="0">
-      <button onclick="addNumber(event)">Go!</button>
+      <input type="number" id="formNumber" value="0">
+      <button onclick="addNumber(event)">Submit</button>
       <button onclick="resetButton(event)">Reset</button>
+      <br>
       <br>
       Count: <p id="count"></p>
       <br>
       Sum: <p id="sum"></p>
       <br>
       Average: <p id="avg"></p>
-    </form>
-    
-  </main>
-  
-  <script type="text/javascript" src="script.js"></script>
+  </form>
   
 </body>
+  
+<script type="text/javascript" src="script.js"></script>
 
 </html>
+
