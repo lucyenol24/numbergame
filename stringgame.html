@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title> Numbers or Strings?! </title>  
+  <meta charset="utf-8">
+</head>
+  
+<body>
+  <header>
+    <h1> Numbers or Strings?! </h1>
+  </header> 
+  
+  <form>
+    <label for="myInput">
+    Enter a number or words:
+    </label>
+    <textarea id="myInput" name="myInput"></textarea>
+    <button type="button" id="submit">Submit!</button>
+    <button type="button" id="reset">Reset!</button>
+  </form>
+  
+  <div id="numbersResults">
+    <h3> Numbers: </h3>
+    <p>Count: <span id="count">0</span></p>
+    <p>Sum: <span id="sum">0</span></p>
+    <p>Average: <span id="avg">0</span></p>
+  </div>
+  
+  <div id="stringResults">
+    <h3> Strings: </h3>
+    <p> Concatenated: <span id="conCatenate"></span></p>
+    <table id="wordFrequencies">
+      <thread>
+        <tr>
+          <th>Word</th>
+          <th>Count</th>
+        </tr>
+      </thread>
+    </table>
+  </div>
+  <script type="text/javascript" src="strings.js"></script>
+  
+</body>
+
+</html>
