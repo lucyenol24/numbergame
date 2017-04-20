@@ -2,7 +2,7 @@ var numbers = [];
 var count = 0;
 var sum = 0;
 var avg = 0;
-var strings = 0;
+var strings = [];
 var concat = 0;
 
 function mathHappen(event) {
@@ -19,7 +19,7 @@ function mathHappen(event) {
   console.log(avg);
   $( "#count" ).html(count);
   $( "#sum" ).html(sum);
-  $( "avg" ).html(avg);
+  $( "#avg" ).html(avg);
     
   } else {
     strings.push(textarea);
