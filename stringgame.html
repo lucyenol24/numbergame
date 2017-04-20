@@ -4,42 +4,32 @@
 <head>
   <title> Numbers or Strings?! </title>  
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
   
 <body>
-  <header>
-    <h1> Numbers or Strings?! </h1>
-  </header> 
-  
-  <form>
-    <label for="myInput">
-    Enter a number or words:
-    </label>
-    <textarea id="myInput" name="myInput"></textarea>
-    <button type="button" id="submit">Submit!</button>
-    <button type="button" id="reset">Reset!</button>
-  </form>
-  
-  <div id="numbersResults">
-    <h3> Numbers: </h3>
-    <p>Count: <span id="count">0</span></p>
-    <p>Sum: <span id="sum">0</span></p>
-    <p>Average: <span id="avg">0</span></p>
-  </div>
-  
-  <div id="stringResults">
-    <h3> Strings: </h3>
-    <p> Concatenated: <span id="conCatenate"></span></p>
-    <table id="wordFrequencies">
-      <thread>
-        <tr>
-          <th>Word</th>
-          <th>Count</th>
-        </tr>
-      </thread>
-    </table>
-  </div>
+  <script src="jquery321min.js"></script>
   <script type="text/javascript" src="strings.js"></script>
+  <h1> Numbers! </h1>
+  <form name="mathForm">
+    Enter some numbers:
+    <textarea placeholder="Type something cool!"></textarea>
+    <button onclick="mathHappen(event)">Submit</button>
+    <button onclick="resetButton(event)">Reset</button>
+    <br>
+    <br>
+    <h1> Number Results: </h1>
+    Count: <p id="count"></p>
+    <br>
+    Sum: <p id="sum"></p>
+    <br>
+    Average: <p id="avg"></p>
+    <br>
+    <h1> String Results: </h1>
+    Number of strings: <p id="strings"></p>
+    <br>
+    Concatenation: <p id="concat"></p>
+  </form>
   
 </body>
 
